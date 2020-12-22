@@ -85,7 +85,7 @@ for item in songlist:
 	weights_dict={}
 	
 	#save
-	savedir=os.path.join(save_dir,item[:-5])
+	savedir=os.path.join(save_dir,item)
 	if not os.path.exists(savedir): os.makedirs(savedir)
 	
 	for i_chunk in range(melgram1_chunks.shape[0]):
